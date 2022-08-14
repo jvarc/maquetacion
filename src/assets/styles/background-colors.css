@@ -1,0 +1,47 @@
+/*colores de fondo*/
+:root {
+    --darkOrange : #FF5C00;
+    --orange     : #FF8000;
+    --lightOrange: #FFB061;
+    --purple     : #5B3D5B;
+    --lightPurple: #D1CADF;
+    --pink       : #FFBEBE;
+    --lightPink  : #FFE5CD;
+    --yellow     : #FFC700;
+
+}
+
+.bg__img--dark-orange {
+    background-color: var(--darkOrange);
+}
+
+.bg__img--orange {
+    background-color: var(--orange);
+}
+
+.bg__img--light-orange {
+    background-color: var(--lightOrange);
+}
+
+.bg__img--purple {
+    background-color: var(--purple);
+}
+
+.bg__img--light-purple {
+    background-color: var(--lightPurple);
+}
+
+.bg__img--pink {
+    background-color: var(--pink);
+}
+
+.bg__img--light-pink {
+    background-color: var(--lightPink);
+}
+
+.bg__img--yellow {
+    background-color: var(--yellow);
+}
+
+
+

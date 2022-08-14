@@ -1,0 +1,40 @@
+.searchbar__txt:focus {
+    background-color: var(--lightPink);
+}
+
+.restaurant__logo:hover {
+    animation: logo 1s ease-in-out;
+}
+
+@keyframes logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  } 
+  75% {
+    transform: rotate(-15deg);
+  } 
+  100% {
+    transform: rotate(0deg);
+  } 
+}
+
+.address__link:visited {
+    color: aqua;
+}
+
+.filter__item:active {
+    background-color: var(--orange);
+}
+
+.promotions__item:hover > .promotions__txt::before{
+    content: '';
+    background-image: url('../image/icons/lengua.png');
+    background-size: 100% 100%;
+
+    opacity: 1;
+    height: 15px;
+    width: 15px;
+}

@@ -1,0 +1,457 @@
+
+/**** contenedor principal *****/
+.main{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    margin: 20px auto;
+    width: 1354px;
+    /* padding: 20px 272px 0px 294px; */
+    display: grid;
+    grid-template-areas: 
+         "headline headline"
+         "promotions promotions"
+         "address searchbar"
+         "filter restaurants"; 
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(1fr);
+}
+
+.mobile__hidden {
+    display: none;
+}
+
+/**** encabezado ******/
+.headline {
+    grid-area: headline;
+    width: 1360px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.headline__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.headline__user-login {
+    padding-right: 1.5vw;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    color: #242E30;
+}
+
+.headline__help {
+    text-decoration: none;
+    color: #242E30;
+}
+
+/****** promociones ******/
+.promotions {
+    width: 1354px;
+    height: 141px;
+    grid-area: promotions;
+    display: flex;
+}
+
+.promotions__list {
+    width: 1354px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    column-gap: 22px;
+}
+
+.promotions__item {
+    margin: 0;
+    width: 150px;
+    cursor: pointer;
+}
+
+.promotions__img{ 
+    width: 150px;
+    height: 100px; 
+    border-radius: 12px;
+
+}
+
+.promotions__txt{
+    text-decoration: none;
+    color: #242E30;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+
+/****** direcciones ******/
+.address {
+    grid-area: address;
+    display: flex;
+    margin-top: 35px;
+    margin-right: 47px;
+    width: 322px;
+    height: 116px;
+    border-radius: 58px;
+    justify-content: center; 
+    background-color: #EBEBEB;  
+}
+
+.address__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 213px;
+    height: 43px;
+    line-height: 23px;
+}
+
+.address__icon {
+    width: 20px;
+    height: 20px;
+    margin-top: 25px;
+    margin-right: 12px;
+
+}
+
+.address__link {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #242E30;
+    text-decoration: none;
+}
+
+/****** barra de busqueda ******/
+.searchbar {
+    grid-area: searchbar;
+    width: 985px;
+    height: 93px;
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 36px;
+    border-radius: 57px;
+    align-items: center;
+    box-shadow: 0px 2.65574px 11.9508px 1.32787px rgba(0, 0, 0, 0.2);
+}
+
+.searchbar__icon {
+    width: 31.87px;
+    height: 31.87px;
+    padding-right: 24px;
+    padding-left: 50px;
+    cursor: pointer;
+}
+
+.searchbar__txt {
+    font-size: 21px;
+    width: 80%;
+    border: 0;
+}
+
+
+/****** filtros ******/
+.filter {
+    grid-area: filter;
+    margin-top: 30px;
+    width: 305px;
+    height: 775px;
+}
+
+.filter__header {
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+
+.filter__img {
+   width: 18px;
+   height: 20px;
+   margin-right: 13px; 
+}
+
+.filter__list {
+    height: 719px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.filter__item {
+    width: 305;
+    height: 49px;
+    display: flex;
+    padding: 0 28px;
+    justify-content: space-between; 
+    align-items: center;
+    border-radius: 32.5px;
+    box-shadow: 0px 0px 3px 1px #EFEDEA;
+    text-decoration: none;
+    color: #242E30;
+}
+
+/******* restaurantes *****/
+.restaurants {
+    grid-area: restaurants;
+    width: 985px;
+}
+
+.restaurant__available {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #242E30;
+    margin-bottom: 36px;
+}
+
+.available__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+.restaurant__list {
+    padding: 0;
+    height: 801px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.restaurant__item {
+    display: flex;
+}
+
+.restaurant__background {
+    width: 326px;
+    height: 158px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.restaurant__logo {
+    width: 68px;
+    height: 68px;
+    border-radius: 5px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+.restaurant__inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.restaurat__title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-block-end: 0px; 
+}
+
+.restaurant__details {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    color: rgba(36, 46, 48, 0.8);
+    column-gap:  10px;
+}
+
+.restaurant__details--space {
+    margin-right: 15px;  
+}
+
+.restaurant__details--bold{
+    font-weight: 700;
+    color: #000000;
+}
+
+.restaurant__details--green {
+    color: #017A39;
+}
+
+/***** Mobile Responsive ****/
+@media (max-width: 1025px) {
+
+    /* selector */
+    .mobile__hidden{
+        display: inline;
+    }
+
+    .desktop__hidden {
+        display: none;
+    }
+
+    /*** principal ***/
+    .main {
+        margin: 0px auto;
+        width: 428px;
+        padding: 0px;
+        /* display: flex;
+        flex-direction: column; */
+        grid-template-areas: 
+            "headline"
+            "searchbar"
+            "promotions"
+            "address"
+            "restaurants";
+   
+    }
+
+    /*** encabezado ***/
+    .headline {
+        width: 428px;
+        height: 88px;
+        padding-top: 29px;
+        background-color: var(--orange);
+        justify-content: space-between;
+    }
+
+    .headline__hamburger {
+        width: 32px;
+        height: 39px;
+        margin-left: 21px;
+    }
+
+    .headline__logo {
+        width: 106px;
+        height: 26px;
+        margin-left: 90px;
+        margin-right: 50px;
+        padding-top: 5px;
+    }
+
+    .headline__settings {
+        width: 28px;
+        height: 28px;
+        padding-top: 5px;
+    }
+
+    .headline__bar-chart {
+        width: 48px;
+        height: 44px;
+        margin-right: 15px;
+    }
+
+    /****** barra de busqueda ******/
+    .searchbar {
+        width: 370px;
+        height: 61px;
+        position: absolute; 
+        margin-top: 86px;
+        margin-left: 29px; 
+        background-color: #FFFFFF;
+    }
+
+    .searchbar__icon {
+        width : 24px;
+        height: 24px;
+        padding-left: 28px;
+        padding-right: 18px;
+    }
+
+    .searchbar__txt {
+        font-size: 16px;
+        width: 70%;  
+    }
+
+    /****** promociones ******/
+    .promotions {
+        width: 395px;
+        margin-top: 57px;
+        margin-left: 33px;
+        font-size: 14px;
+        color: rgba(36, 46, 48, 0.8);
+    }
+
+    .promotions__list {
+        overflow-x: scroll;
+        height: 141px;
+    }
+
+    /****** direcciones ******/
+    .address {
+        width: 370px;
+        height: 75px;
+        margin: 0px;
+        margin-top: 34px;
+        margin-left: 29px;
+        justify-content: start;
+    }
+
+    .address__icon {
+        margin-left: 25px;
+    }
+
+    .address__content {
+        flex-direction: row;
+        width: 300px;
+        margin-top: 16px;
+        color: #224422;
+    }
+
+    .address__link {
+        margin: 0;
+        margin-left: 33px;
+        margin-right: 30px;
+    }
+
+    /******* restaurantes *****/
+    .restaurants {
+        margin-top: 30px;
+        margin-left: 29px;
+    }
+
+    .restaurant__item {
+        width: 370px;
+        height: 238px;
+        margin-bottom: 40px;
+        flex-direction: column;
+    }
+
+    .restaurant__background {
+        width: 370px;
+        height: 144px;
+    }
+
+    .restaurant__inf {
+        margin-top: 19px;
+        width: 340px;
+        height: 75px;
+        gap: 8px 15px;
+    }
+    
+    .restaurat__title {
+        font-size: 16px;
+    }
+
+    .restaurant__details {
+        font-size: 14px;
+    }
+
+
+
+
+
+   
+}
+
+
+
+
+
+
+
+
+
